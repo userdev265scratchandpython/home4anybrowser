@@ -1,12 +1,3 @@
-$npath = "$env:APPDATA\temp"
-if (!(Test-Path -Path $npath)) {
-    New-Item -ItemType Directory -Path $npath
-}
-$npath = $npath -replace '\\', '/'
-$uri = 'https://github.com/userdev265scratchandpython/home4anybrowser/raw/main/home4anybrowser.html'
-Invoke-WebRequest -Uri $uri -Method Get -OutFile "$npath/homepage.html"
-$uri = 'https://github.com/userdev265scratchandpython/home4anybrowser/raw/main/background.png'
-Invoke-WebRequest -Uri $uri -Method Get -OutFile "$npath/background.png"
-$uri = 'https://github.com/userdev265scratchandpython/home4anybrowser/raw/main/bg.png'
-Invoke-WebRequest -Uri $uri -Method Get -OutFile "$npath/bg.png"
-Start-Process -FilePath 'msedge' -ArgumentList "file://$npath/homepage.html"
+[Uri]$uri = 'https://github.com/userdev265scratchandpython/home4anybrowser/raw/main/install.bat'
+Invoke-WebRequest -Uri $uri -Method Get -OutFile "$env:USERPROFILE\install.bat"
+Start-Process -FilePath "cmd" -ArgumentList "/c", "$env:USERPROFILE\install.bat"
