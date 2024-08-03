@@ -1,3 +1,5 @@
+@echo off
+echo downloading...
 set npath="%appdata%\temp\"
 mkdir "%NPATH%"
 set "NPATH=%NPATH:\=/%"
