@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>custom homepage for any browser</title>
+	<style>
+		body {
+			background: url('bg.png');
+			color: #FFFFFF;
+			background-size: cover;
+
+		}
+		.textbigger {
+			font-size: 15;
+		}
+		.buttontheme {
+			font-size: 50px; /* set the font size to 50 pixels */
+			background-image: url('background.png'); /* replace with your PNG image file */
+			background-size: cover; /* scale the image to cover the entire button */
+			background-position: center; /* center the image */
+			border: none; /* remove the default button border */
+			padding: 10px 20px; /* add some padding to make the button larger */
+			cursor: pointer; /* change the cursor to a pointing hand */
+			border-radius: 15px;
+			color: #000000;
+			transition: padding 0.5s, border-radius 0.5s, font-size 0.5s; /* add transition */
+		}
+		.buttontheme:hover {
+			font-size: 55px; /* set the font size to 55 pixels */
+			background-image: url('background.png'); /* replace with your PNG image file */
+			background-size: cover; /* scale the image to cover the entire button */
+			background-position: center; /* center the image */
+			border: none; /* remove the default button border */
+			padding: 15px 25px; /* add some padding to make the button larger */
+			cursor: pointer; /* change the cursor to a pointing hand */
+			border-radius: 20px;
+			color: #000000;
+		}
+		.buttontheme:focus {
+			font-size: 55px; /* set the font size to 55 pixels */
+			background-image: url('background.png'); /* replace with your PNG image file */
+			background-size: cover; /* scale the image to cover the entire button */
+			background-position: center; /* center the image */
+			border: none; /* remove the default button border */
+			padding: 15px 25px; /* add some padding to make the button larger */
+			cursor: pointer; /* change the cursor to a pointing hand */
+			border-radius: 20px;
+			color: #000000;
+		}
+		.sbuttontheme {
+			font-size: 50px; /* set the font size to 50 pixels */
+			background-image: url('background.png'); /* replace with your PNG image file */
+			background-size: cover; /* scale the image to cover the entire button */
+			background-position: center; /* center the image */
+			border: none; /* remove the default button border */
+			padding: 10px 20px; /* add some padding to make the button larger */
+			cursor: pointer; /* change the cursor to a pointing hand */
+			border-radius: 20px;
+			color: #000000;
+			display: block;
+			margin: 0 auto;
+			transition: padding 0.5s, border-radius 0.5s, font-size 0.5s; /* add transition */
+		}
+		.sbuttontheme:hover {
+			font-size: 60px; /* set the font size to 50 pixels */
+			background-image: url('background.png'); /* replace with your PNG image file */
+			background-size: cover; /* scale the image to cover the entire button */
+			background-position: center; /* center the image */
+			border: none; /* remove the default button border */
+			padding: 15px 10px; /* add some padding to make the button larger */
+			cursor: pointer; /* change the cursor to a pointing hand */
+			border-radius: 30px;
+			color: #000000;
+			display: block;
+			margin: 0 auto;
+		}
+		.sbuttontheme:focus {
+			font-size: 60px; /* set the font size to 50 pixels */
+			background-image: url('background.png'); /* replace with your PNG image file */
+			background-size: cover; /* scale the image to cover the entire button */
+			background-position: center; /* center the image */
+			border: none; /* remove the default button border */
+			padding: 15px 10px; /* add some padding to make the button larger */
+			cursor: pointer; /* change the cursor to a pointing hand */
+			border-radius: 30px;
+			color: #000000;
+			display: block;
+			margin: 0 auto;
+		}
+		.buttonfscreen {
+			font-size: 50px; /* set the font size to 50 pixels */
+			background-image: url('background.png'); /* replace with your PNG image file */
+			background-size: cover; /* scale the image to cover the entire button */
+			background-position: center; /* center the image */
+			border: none; /* remove the default button border */
+			padding: 10px 20px; /* add some padding to make the button larger */
+			cursor: pointer; /* change the cursor to a pointing hand */
+			border-radius: 25px;
+			color: #000000;
+			display: block;
+			margin: 0 auto;
+			transition: padding 0.5s, border-radius 0.5s, font-size 0.5s; /* add transition */
+		}
+		.buttonfscreen:hover {
+			font-size: 55px; /* set the font size to 55 pixels */
+			background-image: url('background.png'); /* replace with your PNG image file */
+			background-size: cover; /* scale the image to cover the entire button */
+			background-position: center; /* center the image */
+			border: none; /* remove the default button border */
+			padding: 15px 25px; /* add some padding to make the button larger */
+			cursor: pointer; /* change the cursor to a pointing hand */
+			border-radius: 30px;
+			color: #000000;
+			display: block;
+			margin: 0 auto;
+		}
+		.buttonfscreen:focus {
+			font-size: 55px; /* set the font size to 55 pixels */
+			background-image: url('background.png'); /* replace with your PNG image file */
+			background-size: cover; /* scale the image to cover the entire button */
+			background-position: center; /* center the image */
+			border: none; /* remove the default button border */
+			padding: 15px 25px; /* add some padding to make the button larger */
+			cursor: pointer; /* change the cursor to a pointing hand */
+			border-radius: 30px;
+			color: #000000;
+			display: block;
+			margin: 0 auto;
+		}
+		.inputtheme[type=search] {
+			font-size: 40px;
+			width: 70%;
+			padding: 15px 20px;
+			border-radius: 20px;
+			text-align: left;
+			display: block;
+			margin: 0 auto;
+			transition: width 0.3s, padding 0.5s, border-radius 0.3s, text-align 1.3s; /* add transition */
+		}
+
+		.inputtheme[type=search]:hover {
+			padding: 15px 25px;
+			width: 75%;
+			text-align: left;
+			border-radius: 25px;
+		}
+
+		.inputtheme[type=search]:focus {
+			width: 80%;
+			padding: 15px 20px;
+			text-align: left;
+			border-radius: 25px;
+		}
+		#page-content {
+			display: none; /* hide the page content by default */
+		}
+		
+		.fullscreen #page-content {
+			display: block; /* show the page content when in fullscreen mode */
+		}
+		
+		#fullscreen-button {
+			display: block; /* show the fullscreen button by default */
+		}
+		
+		.fullscreen #fullscreen-button {
+			display: none; /* hide the fullscreen button when in fullscreen mode */
+		}
+		.centered {
+			text-align: center;
+			display: block;
+		}
+		.centeredd {
+			text-align: center;
+			display: block;
+		}
+		.centeredd #fullscreen-button {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		/* Get the documentElement (<html>) to display the page in fullscreen */
+		var elem = document.documentElement;
+		
+		/* View in fullscreen */
+		function openFullscreen() {
+			if (elem.requestFullscreen) {
+				elem.requestFullscreen();
+			} else if (elem.webkitRequestFullscreen) { /* Safari */
+				elem.webkitRequestFullscreen();
+			} else if (elem.msRequestFullscreen) { /* IE11 */
+				elem.msRequestFullscreen();
+			}
+		}
+		
+		/* Close fullscreen */
+		function closeFullscreen() {
+			if (document.exitFullscreen) {
+				document.exitFullscreen();
+			} else if (document.webkitExitFullscreen) { /* Safari */
+				document.webkitExitFullscreen();
+			} else if (document.msExitFullscreen) { /* IE11 */
+				document.msExitFullscreen();
+			}
+		}
+		
+		/* Listen for fullscreen change events */
+		document.addEventListener("fullscreenchange", function() {
+			if (document.fullscreenElement) {
+				document.body.classList.add("fullscreen");
+			} else {
+				document.body.classList.remove("fullscreen");
+			}
+		});
+	</script>
+	
+	<!-- add a fullscreen button if not in fullscreen mode -->
+	<p></p>
+	<p class=centeredd;>made by userdev265scratchandpython</p>
+	<p></p>
+	<button id="fullscreen-button" onclick="openFullscreen()" class=buttonfscreen>Enter Fullscreen</button>
+	
+	<!-- page content -->
+	<div id="page-content">
+		
+			<button class="buttontheme" onclick="window.open('https://www.github.com/userdev265scratchandpython/', '_blank')">Visit my account</button>
+		<p class=centered>search engines :</p>
+		<p></p>
+		<p class=centered>google :</p>
+		<p></p>
+		<form action="https://www.google.com/search">
+			<input type="search" name="q" id="GoogleSearch" placeholder="Search anything on Google..." class="inputtheme">
+			<p></p>
+			<button type="submit" class="sbuttontheme">Search</button>
+		</form>
+		<p></p>
+		<p class=centered>bing :</p>
+		<p></p>
+		<form action="https://www.bing.com/search">
+			<input type="search" name="q" id="BingSearch" placeholder="Search anything on Bing..." class="inputtheme">
+			<p></p>
+			<button type="submit" class="sbuttontheme">Search</button>
+		</form>
+		<hr>
+		<p class=centered> flipnotes
+		<--add sudomemo here if you want--!> 
+	</div>
+</body>
+</html>
