@@ -1,5 +1,4 @@
 $npath = "$env:APPDATA\temp"
-Remove-Item -Path $npath -Recurse -ErrorAction SilentlyContinue
 if (!(Test-Path -Path $npath)) {
     New-Item -ItemType Directory -Path $npath
 }
