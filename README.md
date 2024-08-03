@@ -1,4 +1,4 @@
-# home4anybrowse
+# home4anybrowser
 custom web browser homepage.
 'custom homepage' is the title, the project was originaly named that way.
 this project is made in html
