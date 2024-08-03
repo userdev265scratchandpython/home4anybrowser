@@ -1,6 +1,6 @@
 @echo off
 echo downloading...
-set npath="%appdata%\temp\"
+set npath="%TEMP%\udev265SAP\"
 mkdir "%NPATH%"
 set "NPATH=%NPATH:\=/%"
 powershell -command "[Uri]$uri = 'https://github.com/userdev265scratchandpython/home4anybrowser/raw/main/home4anybrowser.html'; Invoke-WebRequest -Uri $uri -Method Get -OutFile \"%NPATH%/homepage.html\""
