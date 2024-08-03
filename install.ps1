@@ -1,7 +1,7 @@
 $npath = "$env:APPDATA\temp"
-Remove-Item -Path $npath -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path $npath -Recurse -ErrorAction SilentlyContinue
 if (!(Test-Path -Path $npath)) {
-    New-Item -ItemType Directory -Path $npath -Force
+    New-Item -ItemType Directory -Path $npath
 }
 $npath = $npath -replace '\\', '/'
 $uri = 'https://github.com/userdev265scratchandpython/home4anybrowser/raw/main/home4anybrowser.html'
