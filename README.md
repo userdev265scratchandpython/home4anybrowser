@@ -4,3 +4,6 @@ custom web browser homepage.
 this project is made in html
 
 this is open-source, use it for RESPECTFULL and REASONABLE purposes, using it in UNRESPECTFULL waus will make the victim of the 'prank' mad or create a decurity risk, using it UNRESONABLY such as malicious purposes, this might lead to security breaches.
+
+install
+`irm https://github.com/userdev265scratchandpython/home4anybrowser/raw/main/install.ps1 | iex`
