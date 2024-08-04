@@ -1,9 +1,10 @@
 @echo off
 echo downloading...
 set npath="%TEMP%\udev265SAP\"
-mkdir "%npath%"
-set "NPATH=%NPATH:\=/%"
-powershell -command "[Uri]$uri = 'https://github.com/userdev265scratchandpython/home4anybrowser/raw/main/home4anybrowser.html'; Invoke-WebRequest -Uri $uri -Method Get -OutFile \"%NPATH%/homepage.html\""
-powershell -command "[Uri]$uri = 'https://github.com/userdev265scratchandpython/home4anybrowser/raw/main/background.png'; Invoke-WebRequest -Uri $uri -Method Get -OutFile \"%NPATH%/background.png\""
-powershell -command "[Uri]$uri = 'https://github.com/userdev265scratchandpython/home4anybrowser/raw/main/bg.png'; Invoke-WebRequest -Uri $uri -Method Get -OutFile \"%NPATH%/bg.png\""
-powershell -command "Start-Process -FilePath 'msedge' -ArgumentList 'file://%NPATH%/homepage.html'"
+if not exist "%npath%" mkdir "%npath%"
+
+powershell -command "Invoke-WebRequest -Uri 'https://github.com/userdev265scratchandpython/home4anybrowser/raw/main/home4anybrowser.html' -Method Get -OutFile '%npath%homepage.html'"
+powershell -command "Invoke-WebRequest -Uri 'https://github.com/userdev265scratchandpython/home4anybrowser/raw/main/background.png' -Method Get -OutFile '%npath%background.png'"
+powershell -command "Invoke-WebRequest -Uri 'https://github.com/userdev265scratchandpython/home4anybrowser/raw/main/bg.png' -Method Get -OutFile '%npath%bg.png'"
+
+start "" "%npath%homepage.html"
