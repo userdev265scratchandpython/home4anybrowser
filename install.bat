@@ -1,6 +1,6 @@
 @echo off
 echo downloading...
-set npath="%TEMP%\udev265SAP\"
+set npath="C:\Users\%username%\AppData\Roaming\temp\udev265SAP\"
 if exist "%npath%" rmdir /s /q "%npath%"
 mkdir "%npath%"
 
